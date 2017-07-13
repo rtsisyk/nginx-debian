@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "mod debian/build-extras/objs/ngx_http_tnt_module.so"
+echo "mod debian/libnginx-mod.conf/mod-http-upstream-tarantool.conf"

@@ -1,3 +1,9 @@
+nginx (1.13.3-1) unstable; urgency=medium
+
+  * Introduce libnginx-mod-http-upsteam-tarantool.
+
+ -- Roman Tsisyk <roman@tarantool.org>  Thu, 13 Jul 2017 15:05:49 +0300
+
 nginx (1.13.2-1) unstable; urgency=medium
 
   [ Christos Trochalakis ]

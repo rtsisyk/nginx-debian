@@ -1,0 +1,3 @@
+[submodule "debian/modules/nginx-upstream-tarantool"]
+	path = debian/modules/nginx-upstream-tarantool
+	url = https://github.com/tarantool/nginx_upstream_module.git

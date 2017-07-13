@@ -67,3 +67,9 @@ README for Modules versions
   Homepage: https://github.com/arut/nginx-rtmp-module
     rm -r debian/modules/nginx-rtmp-module/test
   Version: v1.1.11
+
+ ngx_http_upstream_tarantool
+  Homepage: https://github.com/tarantool/nginx_upstream_module.git
+    rm -r debian/modules/nginx-upstream-tarantool/third_party/msgpuck
+    rm -r debian/modules/nginx-upstream-tarantool/third_party/yajl
+  Version: v2.4.6-rc1
