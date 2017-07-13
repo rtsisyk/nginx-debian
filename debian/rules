@@ -26,6 +26,7 @@ DYN_MODS := \
 	http-subs-filter \
 	http-uploadprogress \
 	http-upstream-fair \
+	http-upstream-tarantool \
 	http-xslt-filter \
 	mail \
 	nchan \
@@ -106,6 +107,7 @@ full_configure_flags := \
 			--add-dynamic-module=$(MODULESDIR)/nginx-dav-ext-module \
 			--add-dynamic-module=$(MODULESDIR)/nginx-echo \
 			--add-dynamic-module=$(MODULESDIR)/nginx-upstream-fair \
+			--add-dynamic-module=$(MODULESDIR)/nginx-upstream-tarantool \
 			--add-dynamic-module=$(MODULESDIR)/ngx_http_substitutions_filter_module
 
 extras_configure_flags := \
@@ -137,6 +139,7 @@ extras_configure_flags := \
 			--add-dynamic-module=$(MODULESDIR)/nginx-lua \
 			--add-dynamic-module=$(MODULESDIR)/nginx-upload-progress \
 			--add-dynamic-module=$(MODULESDIR)/nginx-upstream-fair \
+			--add-dynamic-module=$(MODULESDIR)/nginx-upstream-tarantool \
 			--add-dynamic-module=$(MODULESDIR)/ngx_http_substitutions_filter_module
 
 %:

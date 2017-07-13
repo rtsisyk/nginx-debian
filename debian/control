@@ -24,7 +24,9 @@ Build-Depends: autotools-dev,
                libxslt1-dev,
                po-debconf,
                quilt,
-               zlib1g-dev
+               zlib1g-dev,
+               libyajl-dev,
+               libmsgpuck-dev
 Standards-Version: 3.9.8.0
 Homepage: http://nginx.net
 Vcs-Git: https://anonscm.debian.org/cgit/pkg-nginx/nginx.git
@@ -78,6 +80,7 @@ Depends: libnginx-mod-http-auth-pam (= ${binary:Version}),
          libnginx-mod-http-subs-filter (= ${binary:Version}),
          libnginx-mod-http-upstream-fair (= ${binary:Version}),
          libnginx-mod-http-xslt-filter (= ${binary:Version}),
+         libnginx-mod-http-upstream-tarantool (= ${binary:Version}),
          libnginx-mod-mail (= ${binary:Version}),
          libnginx-mod-stream (= ${binary:Version}),
          nginx-common (= ${source:Version}),
@@ -154,6 +157,7 @@ Depends: libnginx-mod-http-auth-pam (= ${binary:Version}),
          libnginx-mod-http-subs-filter (= ${binary:Version}),
          libnginx-mod-http-uploadprogress (= ${binary:Version}),
          libnginx-mod-http-upstream-fair (= ${binary:Version}),
+         libnginx-mod-http-upstream-tarantool (= ${binary:Version}),
          libnginx-mod-http-xslt-filter (= ${binary:Version}),
          libnginx-mod-mail (= ${binary:Version}),
          libnginx-mod-nchan (= ${binary:Version}),
@@ -382,3 +386,18 @@ Description: WebDAV missing commands support for Nginx
  WebDAV support.
  .
  WebDAV Ext provides the missing PROPFIND & OPTIONS methods.
+
+Package: libnginx-mod-http-upstream-tarantool
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Suggests: tarantool
+Description: JSON-RPC and REST interface for Tarantool Database
+  The full-featured JSON-RPC and REST interface for Tarantool
+  Database. This module can be used to expose stored procedures
+  from Tarantool Database via JSON-RPC or REST interfaces.
+  .
+  Key features:
+  .
+  - Tarantool procedures callable via JSON-RPC or REST.
+  - Fault-tolerance and load balancing.
+  - Less overhead compared to proxy_pass upstreaming.

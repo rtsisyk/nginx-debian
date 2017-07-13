@@ -58,3 +58,9 @@ README for Modules versions
   Homepage: https://github.com/yaoweibin/ngx_http_substitutions_filter_module
   Version: v0.6.4
   Patch: dynamic-module.patch
+
+ ngx_http_upstream_tarantool
+  Homepage: https://github.com/tarantool/nginx_upstream_module.git
+    rm -r debian/modules/nginx-upstream-tarantool/third_party/msgpuck
+    rm -r debian/modules/nginx-upstream-tarantool/third_party/yajl
+  Version: v2.4.6-rc1
